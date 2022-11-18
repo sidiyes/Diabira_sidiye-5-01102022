@@ -41,6 +41,7 @@ fetch(produitUrl)
           if (cartProducts === null) {
             cartProducts = [];
             cartProducts.push(myProduct);
+            alert("Produit ajouté au panier")
           } else if (cartProducts != null) {
             //Vérifier si le produit id et la couleur existe
             let ifProduct = cartProducts.find(
@@ -52,6 +53,7 @@ fetch(produitUrl)
               ifProduct.quantity += myProduct.quantity;
             } else {
               cartProducts.push(myProduct);
+              alert("Produit ajouté au panier")
             }
             //
 
