@@ -1,3 +1,4 @@
-// let orderNumber = JSON.parse(localStorage.getItem("id"));
-document.getElementById("orderId").textContent = orderNumber;
-//localStorage.clear();
+let linkId = new URL(window.location).searchParams.get("id");
+const orderId = document.getElementById('orderId');
+orderId.innerHTML = linkId;
+localStorage.clear();

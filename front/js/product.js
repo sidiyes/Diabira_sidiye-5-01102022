@@ -1,6 +1,6 @@
-let params = new URL(document.location).searchParams;
+ let params = new URL(document.location).searchParams;
 let idUrl = params.get("id");
-const produitUrl = `http://localhost:3000/api/products/` + idUrl;
+const produitUrl = `http://localhost:3000/api/products/` + idUrl; 
 
 fetch(produitUrl)
   .then((data) => {
